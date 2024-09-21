@@ -2,8 +2,11 @@ package com.PoloIT.GestionDeInscripciones.Services;
 
 import com.PoloIT.GestionDeInscripciones.Config.ExecptionControll.ResponseException;
 import com.PoloIT.GestionDeInscripciones.DTO.MentorDTO;
+import com.PoloIT.GestionDeInscripciones.DTO.StudentDTO;
 import com.PoloIT.GestionDeInscripciones.Entity.Mentor;
 import com.PoloIT.GestionDeInscripciones.Entity.Student;
+import com.PoloIT.GestionDeInscripciones.Entity.User;
+import com.PoloIT.GestionDeInscripciones.Enums.Rol;
 import com.PoloIT.GestionDeInscripciones.Repository.MentorRepository;
 import com.PoloIT.GestionDeInscripciones.Repository.UserRepository;
 import com.PoloIT.GestionDeInscripciones.Utils.FileUserServices;
@@ -31,12 +34,15 @@ public class MentorServiceImpl {
     }
 
     private Mentor dateUpdate(MentorDTO mentorDTO) {
-        if (Objects.isNull(mentorDTO.id()))
-            throw new ResponseException("404", "Id requerido", HttpStatus.NOT_FOUND);
-
         Mentor mentor = MentorDTO.fromMentor(mentorDTO);
 
-        mentor.setId(userService.getUserRolContext(Mentor.class).getId());
+        User userContext = userService.getUserContext();
+        if (userContext.getRol()== Rol.ADMIN){
+            if (Objects.isNull(mentorDTO.id()))
+                throw new ResponseException("404", "Id requerido", HttpStatus.NOT_FOUND);
+            mentor.setId(mentorDTO.id());
+        } else if (userContext.getRol() == Rol.MENTOR)
+            mentor.setId(userService.getUserContext().getId());
         return mentor;
     }
 

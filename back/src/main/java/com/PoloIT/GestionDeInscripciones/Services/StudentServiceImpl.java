@@ -3,6 +3,8 @@ package com.PoloIT.GestionDeInscripciones.Services;
 import com.PoloIT.GestionDeInscripciones.Config.ExecptionControll.ResponseException;
 import com.PoloIT.GestionDeInscripciones.DTO.StudentDTO;
 import com.PoloIT.GestionDeInscripciones.Entity.Student;
+import com.PoloIT.GestionDeInscripciones.Entity.User;
+import com.PoloIT.GestionDeInscripciones.Enums.Rol;
 import com.PoloIT.GestionDeInscripciones.Repository.StudentRepository;
 import com.PoloIT.GestionDeInscripciones.Utils.FileUserServices;
 import jakarta.servlet.http.HttpServletRequest;
@@ -32,7 +34,13 @@ public class StudentServiceImpl {
 
         Student student = StudentDTO.fromStudent(studentDTO);
 
-        student.setId(userService.getUserContext().getId());
+        User userContext = userService.getUserContext();
+        if (userContext.getRol()== Rol.ADMIN){
+            if (Objects.isNull(studentDTO.id()))
+                throw new ResponseException("404", "Id requerido", HttpStatus.NOT_FOUND);
+            student.setId(studentDTO.id());
+        } else if (userContext.getRol() == Rol.STUDENT)
+            student.setId(userService.getUserContext().getId());
         return student;
     }
 

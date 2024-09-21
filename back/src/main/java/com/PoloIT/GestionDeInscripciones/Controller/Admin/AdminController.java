@@ -57,5 +57,15 @@ public class AdminController {
         adminService.changeImg(file, request);
         return new ResponseEntity<>(Map.of("Img", "Imagen cargada"), HttpStatus.CREATED);
     }
+    @PatchMapping("updateStudent")
+    public ResponseEntity<Map<String, String>> update(@Valid @RequestBody StudentDTO studentDTO) {
+        studentService.update(studentDTO);
+        return new ResponseEntity<>(Map.of("update", "Datos actualizados"), HttpStatus.OK);
+    }
+    @PatchMapping("updateMentor")
+    public ResponseEntity<Map<String, String>> update(@Valid @RequestBody MentorDTO mentorDTO) {
+        mentorServiceImpl.update(mentorDTO);
+        return new ResponseEntity<>(Map.of("update", "Datos actualizados"), HttpStatus.OK);
+    }
 
 }
