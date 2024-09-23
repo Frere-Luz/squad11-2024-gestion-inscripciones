@@ -81,7 +81,7 @@ public class AuthServiceImpl implements AuthService {
 
 
         if (userRepository.findByEmail(userDto.email()).isPresent())
-            throw new ResponseException("404", "Email in used", HttpStatus.NOT_ACCEPTABLE);
+            throw new ResponseException("406", "Email in used", HttpStatus.NOT_ACCEPTABLE);
     }
 
     private User fromUser(UserDto userDto) {
@@ -190,7 +190,7 @@ public class AuthServiceImpl implements AuthService {
 //                    isValidRol(user1.getRol());
 //                    return user1;
 //                })
-                .orElseThrow(() -> new ResponseException("404", "Email in used", HttpStatus.NOT_ACCEPTABLE));
+                .orElseThrow(() -> new ResponseException("404", "email not found", HttpStatus.NOT_FOUND));
         emailService.sendEmail(
                 user.getEmail(),
                 "prueba para reset password",

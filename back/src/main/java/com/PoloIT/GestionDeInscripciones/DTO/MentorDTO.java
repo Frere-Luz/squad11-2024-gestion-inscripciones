@@ -16,7 +16,8 @@ public record MentorDTO(
         String phone,
         LocalDate birthdate, // Corregido a minúscula
         String nationality,
-        String dni
+        String dni,
+        String imgUrl
 ) {
 
     //* Constructor que convierte una entidad Mentor a MentorDTO.
@@ -32,7 +33,8 @@ public record MentorDTO(
                 mentor.getPhone(),
                 mentor.getBirthdate(),
                 mentor.getNationality(),
-                mentor.getDni()
+                mentor.getDni(),
+                mentor.getImgUrl()
         );
     }
 
@@ -49,7 +51,8 @@ public record MentorDTO(
                 mentor.getPhone(),
                 mentor.getBirthdate(),
                 mentor.getNationality(),
-                mentor.getDni()
+                mentor.getDni(),
+                mentor.getImgUrl()
         );
     }
 
@@ -67,6 +70,7 @@ public record MentorDTO(
                 .birthdate(mentorDTO.birthdate)
                 .nationality(mentorDTO.nationality)
                 .dni(mentorDTO.dni)
+//la URL de la img no debería actualizarse nunca, a no ser que se cree la img por 1ra vez
                 .build();
     }
 }

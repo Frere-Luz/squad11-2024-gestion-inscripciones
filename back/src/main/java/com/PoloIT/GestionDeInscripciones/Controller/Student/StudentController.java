@@ -38,8 +38,8 @@ public class StudentController {
     }
 
 
-    @PostMapping("img")
-    public ResponseEntity<Map<String, String>> registerEvent(@RequestPart("file") MultipartFile file) {
+    @PostMapping("imgUrl")
+    public ResponseEntity<Map<String, String>> updateImgStudent(@RequestPart("file") MultipartFile file) {
         studentService.changeImg(file, request);
         return new ResponseEntity<>(Map.of("Img", "Imagen cargada"), HttpStatus.CREATED);
     }

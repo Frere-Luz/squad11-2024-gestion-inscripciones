@@ -37,7 +37,7 @@ public class MentorController {
         MentorDTO body = new MentorDTO(userService.getUserRolContext(Mentor.class));
         return new ResponseEntity<>(Map.of("Event", body), HttpStatus.OK);
     }
-    @PostMapping("img")
+    @PostMapping("imgUrl")
     public ResponseEntity<Map<String, String>> updateFile(@RequestPart("file") MultipartFile file) {
         mentorService.changeImg(file, request);
         return new ResponseEntity<>(Map.of("Img", "Imagen cargada"), HttpStatus.CREATED);

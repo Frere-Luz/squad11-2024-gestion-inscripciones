@@ -10,7 +10,7 @@ public record StudentDTO(
         Long id,
         @NotNull(message = "name requerido")
         String name,
-        String img,
+        String imgUrl,
         @NotNull(message = "lastname requerido")
         String lastName,
         @NotNull(message = "technologies requerido")
@@ -50,7 +50,7 @@ public record StudentDTO(
         return Student.builder()
                 .id(studentDTO.id)
                 .name(studentDTO.name)
-                .imgUrl(studentDTO.img)
+                .imgUrl(studentDTO.imgUrl)
                 .rol(studentDTO.rol)
                 .technologies(studentDTO.technologies)
                 .lastName(studentDTO.lastName)
@@ -68,7 +68,7 @@ public record StudentDTO(
         return Student.builder()
                 .id(this.id)
                 .name(this.name)
-                .imgUrl(this.img)
+                .imgUrl(this.imgUrl)
                 .rol(this.rol)
                 .technologies(this.technologies)
                 .lastName(this.lastName)

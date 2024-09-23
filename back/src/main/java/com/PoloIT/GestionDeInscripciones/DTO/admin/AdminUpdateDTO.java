@@ -10,14 +10,11 @@ public record AdminUpdateDTO(
         @NotNull(message = "name requerido")
         String name,
         String email,
-        String img,
+//la URL de la img no debería actualizarse nunca, a no ser que se cree la img por 1ra vez
         @NotNull(message = "lastname requerido")
         String lastName,
         @NotNull(message = "linkedin requerido")
         String linkedin
-//        String dni,
-//        String phone,
-//        LocalDate birthdate,
-//        String nationality
+
 ) {
 }

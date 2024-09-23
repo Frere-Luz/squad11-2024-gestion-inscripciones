@@ -48,5 +48,6 @@ public class Admin {
         this.setName(adminUpdateDTO.name());
         this.setLastName(adminUpdateDTO.lastName());
         this.getUser().update(adminUpdateDTO);
+//la URL de la img no debería actualizarse nunca, a no ser que se cree la img por 1ra vez
     }
 }
