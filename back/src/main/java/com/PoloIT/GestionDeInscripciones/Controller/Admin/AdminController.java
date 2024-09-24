@@ -3,7 +3,6 @@ package com.PoloIT.GestionDeInscripciones.Controller.Admin;
 import com.PoloIT.GestionDeInscripciones.DTO.MentorDTO;
 import com.PoloIT.GestionDeInscripciones.DTO.StudentDTO;
 import com.PoloIT.GestionDeInscripciones.DTO.admin.AdminUpdateDTO;
-import com.PoloIT.GestionDeInscripciones.Entity.User;
 import com.PoloIT.GestionDeInscripciones.Services.AdminServiceImpl;
 import com.PoloIT.GestionDeInscripciones.Services.MentorServiceImpl;
 import com.PoloIT.GestionDeInscripciones.Services.StudentServiceImpl;
@@ -122,7 +121,7 @@ public class AdminController {
                             examples = @ExampleObject(value = "{ \"Img\": \"Imagen cargada\" }"))),
 
     })
-    @PostMapping("imgUrl")
+    @PostMapping("img")
     public ResponseEntity<Map<String, String>> updateFile(@RequestPart("file") MultipartFile file) {
         adminService.changeImg(file, request);
         return new ResponseEntity<>(Map.of("Img", "Imagen cargada"), HttpStatus.CREATED);
