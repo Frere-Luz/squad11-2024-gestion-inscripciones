@@ -13,7 +13,7 @@ public record UserDto(
         @NotEmpty(message = "Email required")
         @NotNull(message = "Email required")
         @Pattern(regexp = ".*(^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$)", message = "Email not valid")
-        @Schema(description = "Email del usuario", example = "usuario@ejemplo.com")
+        @Schema(description = "Email del usuario", example = "juan_garcia@ejemplo.com")
         String email,
         String name,
 
