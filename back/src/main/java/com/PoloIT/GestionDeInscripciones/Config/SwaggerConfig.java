@@ -11,7 +11,7 @@ import org.springframework.http.HttpHeaders;
 
 @OpenAPIDefinition(
         servers = {
-        @Server(url = "https://mi-server.com/", description = "Production server"),
+//        @Server(url = "https://mi-server.com/", description = "Production server"),
         @Server(url = "http://localhost:8080/", description = "Development server")},
         info = @Info(
                 title = "API GESTION DE INSCRIPCIONES",

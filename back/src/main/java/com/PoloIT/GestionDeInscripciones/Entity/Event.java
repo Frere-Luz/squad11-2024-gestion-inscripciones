@@ -21,12 +21,15 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private String tipo;
     private String description;
     private String img;
+    private String capacity;
 
     @Column(name = "is_active")
     @JsonProperty("isActive")
     private boolean isActive;
+    private LocalDateTime startsAt;
     @UpdateTimestamp
     private LocalDateTime updatedAt;
 
