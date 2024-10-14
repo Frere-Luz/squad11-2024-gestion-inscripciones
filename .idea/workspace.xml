@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="28d4b849-8d24-43fc-86e1-c94c16a47525" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/frontend /.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /public/_redirects" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/api/admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/api/adminlogin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/api/egresados.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/api/eventos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/api/interceptor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/api/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/api/mentor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/api/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/api/team.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/api/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/D3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/Egresado.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/Epidata.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/Gire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/Globant.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/Hansen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/Ilustraciones.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/Mentores.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/Paso1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/Paso2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/Paso3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/Paso4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/code-logo.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/error404.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/assets/logo.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/components/Error404.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/components/Logo.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/components/Notifications.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/components/Rating.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/hooks/useAppselector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/store/Auth/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/store/slice/adminSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/store/slice/egresadoSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/store/slice/eventosSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/store/slice/mentorSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/store/slice/teamSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/store/slice/userSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/utils/authUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/AdminLogin/AdminLogin.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/Dashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/Egresados.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/Eventos/Component/Agregar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/Eventos/Component/EventosCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/Eventos/Component/EventosTable.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/Eventos/Component/InscritosTable.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/Eventos/Eventos.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/Mentores.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/Team/GroupTable.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/Team/TeamGroupFilter.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/Team/components/Modal.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/components/DashboardCalendar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/components/DashboardCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/components/DashboardChart.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/components/EgresadosCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/components/EgresadosTable.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/components/MentoresCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/components/MentoresTable.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Admindash/components/NavAndDrawer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Auth/Login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Auth/Register.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Home/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Home/components/AboutUs.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Home/components/Features.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Home/components/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Home/components/Navbar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Home/components/News.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Home/components/Reviews.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/Home/components/ScrollToTopButton.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/User/Events.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/User/ListEvents.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/User/components/CardEvent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /src/views/User/components/Navbar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend /vite.config.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2nRfhPIMhXrB1L2wEp1DlpVqwSW" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.saveactions&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28d4b849-8d24-43fc-86e1-c94c16a47525" name="Changes" comment="" />
+      <created>1728940930678</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728940930678</updated>
+    </task>
+    <servers />
+  </component>
+</project>
