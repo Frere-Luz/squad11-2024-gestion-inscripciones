@@ -10,8 +10,6 @@ import io.swagger.v3.oas.annotations.servers.Server;
 import org.springframework.http.HttpHeaders;
 
 @OpenAPIDefinition(
-        servers = {
-                @Server(url = "http://localhost:8080/", description = "Development server")},
         info = @Info(
                 title = "API GESTION DE INSCRIPCIONES",
                 description = "Esta API de Inscripciones te permite autentificarte y registrarte a un evento",
